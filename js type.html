@@ -1,0 +1,50 @@
+<!DOCTYPE html">
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Javascript</title>
+</head>
+
+<body>
+
+<form>
+ <fieldset>
+  <legend>Personal Information</legend>
+<ul>  
+  
+  
+  <li><label>Name:          <input type="text"></li>
+  <li><label>Father's Name: <input type="text"></li>
+  <li><label>Mother's Name: <input type="text"></li>
+  <li><label>Email:         <input type="text"></li>
+  <li><label>Date of birth: <input type="text"></li>
+  <label for="male">Male</label>
+  <input type="radio" name="sex" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="sex" id="female" value="female"><br>
+ 
+   <button type="button" onClick="formInformation()">click me</button>
+
+  </ul>
+ </fieldset>
+
+ <script>
+      
+function formInformation(){
+
+    
+
+     var allInputs = document.getElementsByTagName('INPUT');
+
+     var fullName = allInputs[0].value;     
+           
+     if(fullName != ""){
+
+     alert(fullName);
+
+}
+
+  </script>
+</body>
+</html>

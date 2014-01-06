@@ -1,0 +1,38 @@
+<!DOCTYPE html"><head>
+<title>Untitled Document</title>
+</head>
+<html>
+<body>
+<script>
+function ChGrade()
+{
+var a = document.getElementById("mark").value;
+if( a >= 80 ) alert("You got A+");
+else if(a<79&&a>69) alert("You got A");
+else if(a<69&&a>99) alert("You got A-");
+else if(a<59&&a>49) alert("You got B");
+else if(a<49&&a>39) alert("You got C");
+else if(a<39&&a>32) alert("You got D");
+else alert("You are Fail")
+}
+</script>
+
+<pre>
+SSC Grading System
+0-32=Fail
+33-39=D
+40-49=C
+50-59=B
+60-69=A-
+70-79=A
+80&lt =A+
+</pre>
+<form >
+Input Number:
+  <input type="submit" onclick="ChGrade()" value="See Grade">
+</form>
+</body>
+</html>
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->

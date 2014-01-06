@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>USE CASE: if..else/if....else</title>
+
+</head>
+
+<body>
+
+<form>
+
+<fieldset><legend>Sign Up </legend>
+<ul>
+
+    <li><label>Name</label><input type="text" /></li>
+
+    <li><label>Age</label><input type="radio" name="age" value="Below 18" />Below 18 
+
+                          <input type="radio" name="age" value="Above 18 Below 40" />Above18 Below 40 
+
+                          <input type="radio" name="age" value="Above 40" />Above 40</li>
+
+    <li><label>Gender</label><select>
+
+                            <option>Male</option>
+
+                            <option>Female</option>
+
+                            </select>
+
+                            </li>
+
+    <li><label>Comment</label><textarea></textarea></li>
+ 
+       <button type="button" onClick="formInformation()">Click Me</button>
+
+</ul>
+
+</fieldset>
+
+</form>
+
+<script>
+
+function formInformation(){
+
+    
+
+    var allInputs = document.getElementsByTagName('INPUT');
+
+    var fullName = allInputs[0].value;     
+
+    //if(fullName.length > 0){
+
+    if(fullName != ""){
+
+        alert(fullName);
+
+    }
+
+    
+
+    if(allInputs[1].checked){
+
+        age1 = allInputs[1].value; 
+
+        alert(age1);
+
+    }
+
+    
+
+    if(allInputs[2].checked){
+
+        age2 = allInputs[2].value; 
+
+        alert(age2);
+
+    }
+
+    
+    if(allInputs[3].checked){
+
+        age3 = allInputs[3].value; 
+
+        alert(age3);
+
+    }
+
+    
+
+    var allOptions = document.getElementsByTagName('OPTION');
+
+    alert(allOptions[0].value);
+
+    alert(allOptions[1].selected);
+
+    
+
+    //etxtarea
+
+    
+
+    //alert    
+
+}
+</script>

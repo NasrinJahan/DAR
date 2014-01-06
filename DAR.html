@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Diognostic Assessment Report</title>
+</head>
+
+
+<body>
+<h1>Diagnostic Assessment Report</h1>
+
+<p>For infants undergoing audiological assessment following referral from the VIHSP newborn hearing screen</p>
+
+<form>
+
+<fieldset>
+
+<legend>
+       
+     Information  
+       
+       </legend>
+
+<h4>Baby's details</h4>
+  
+  <label>First name: <input type="text" name="Last name"></label><br>
+
+  <label>Last name: <input type="text" name="First name"></label><br>
+  
+  <label>Alternate name (eg name at birth): <input type="text" name="Alternate name"></label><br>
+  
+  <label>DOB:<input type="date" name="dob"></label>
+  <label>Sex:<input type="text"></label><br>
+  
+  <label>Address:<input type="text" name="address"></label>
+  <label>Telephone:<input type="number" name="telephone"></label><br>
+  
+  <label>UR#:<input type="text" name="ur#"></label><br>
+  
+  <label>Reffering Hospital:<input type="text" name="ref. hospital"></label><br>
+<h4>Detailes about this appointment</h4>
+  
+  <label>Date: <input type="date" name="date"></label><br>
+  
+  <label>Appointment number:<input type="radio" name="number" value="01">01 </label>
+  <label><input type="radio" name="number" value="02">02 </label>
+  <label><input type="radio" name="number" value="03">03 <input type="radio" name="number" value="0..">0...</label> <br>
+  
+  <label>Audiologist's name:<input type="text" name="audiologist's name"></label><br>
+  
+  <label>Audiology Center:<textarea rows="2"></textarea></label><br>
+  
+  <label><input type="checkbox">If the patient FTA this appointment, please tick this box and complete the management section (overleaf).</label><br>
+
+<h4>Please tick any circles that apply, and record results where indicated.</h4>
+ 
+ <button type="button" onClick="formInformation()">Submit</button>
+ 
+</fieldset>
+</form>
+
+  <script>
+  function formInformation(){
+	  
+	  
+    var allInputs = document.getElementsByTagName('INPUT');
+
+    var firstName = allInputs[0].value;     
+
+    if(firstName != ""){
+
+        alert(firstName);
+
+} 
+	
+var lastName = allInputs[1].value;
+
+if(lastName != ""){
+
+        alert(lastName);
+
+}
+var altName = allInputs[2].value;
+
+if(altName != ""){
+
+        alert(altName);
+
+}
+
+var dob = allInputs[3].value;
+
+if(dob != ""){
+
+        alert(dob);
+
+}
+var sex = allInputs[4].value;
+
+if(sex != ""){
+
+        alert(sex);
+
+}
+
+var address = allInputs[5].value;
+
+if(address != ""){
+
+        alert(address);
+
+}
+var telephone = allInputs[6].value;
+
+if(telephone != ""){
+
+        alert(telephone);
+
+}
+
+var ur = allInputs[7].value;
+
+if(ur != ""){
+
+        alert(ur);
+
+}
+var hospital = allInputs[8].value;
+
+if(hospital != ""){
+
+        alert(hospital);
+
+}
+var fullName = allInputs[9].value;
+
+if(fullName != ""){
+
+        alert(fullName);
+
+}
+var fullName = allInputs[10].value;
+
+if(fullName != ""){
+
+        alert(fullName);
+
+}
+if(allInputs[11].checked){
+
+        number1 = allInputs[11].value; 
+
+        alert(number1);
+}
+if(allInputs[12].checked){
+
+        number2 = allInputs[12].value; 
+
+        alert(number2);
+}
+if(allInputs[13].checked){
+
+        number3 = allInputs[13].value; 
+
+        alert(number3);
+}
+if(allInputs[14].checked){
+
+        number4 = allInputs[14].value; 
+
+        alert(number4);
+}
+
+
+var fullName = allInputs[15].value;
+
+if(fullName != ""){
+
+        alert(fullName);
+
+}
+var fullName = allInputs[16].value;
+
+if(fullName != ""){
+
+        alert(fullName);
+
+}
+
+}
+  </script>
+
+
+</body>
+</html>
